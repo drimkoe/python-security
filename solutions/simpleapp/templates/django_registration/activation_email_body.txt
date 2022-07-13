@@ -1,0 +1,3 @@
+Hello {{ user.username }},
+Go to https://{{ site }}/accounts/activate/{{ activation_key }}/ 
+to activate your account.

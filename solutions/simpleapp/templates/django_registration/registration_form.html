@@ -1,0 +1,17 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+<div class="container">
+    <h1 class="display-4">New account registration</h1>
+    <hr/>
+    <form  method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">
+        Submit
+        </button>
+    {% endbuttons %}
+    </form>
+</div>
